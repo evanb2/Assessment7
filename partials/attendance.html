@@ -1,1 +1,18 @@
-<h1>Attendance</h1>
+<div class="col-md-6" ng-show="students.length">
+  <h4>Student List</h4>
+  <ul>
+    <li ng-repeat="student in students">
+      {{ student.name }}
+      <button ng-click="addSignIn(student)" class="btn btn-info btn-xs">Report</button>
+    </li>
+  </ul>
+</div>
+
+<div ng-show="studentsHere.length" class="col-md-6">
+  <h4>Minions Present and Accounted For:</h4>
+  <ul>
+    <li ng-repeat="item in studentsHere = (students | filter:{signIn: true})">
+      <h5>{{ item.name }}</h5>
+    </li>
+  </ul>
+</div>
