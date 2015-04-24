@@ -7,7 +7,6 @@
       </div>
       <button type="submit" class="btn btn-warning">Add</button>
     </form>
-    <button type="button" ui-sref="students.attendance">Sign-In</button>
   </div>
   <div ng-show="students.length">
     <ul>
@@ -15,6 +14,7 @@
         {{ student.name }}
       </li>
     </ul>
+    <button type="button" ui-sref="students.attendance" ng-hide="">Show Sign-In Sheet</button>
   </div>
 
 </div>
