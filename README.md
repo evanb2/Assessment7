@@ -1,15 +1,23 @@
 # Name: Evan Butler
 # Date: April 24, 2015.
 
-Description:
+Description: Assessment7 - Create a site for allowing students to sign in to class for the day.
 
 # SetUp and Use
 
 SetUp
 
-1.
+1. Open terminal/console and type: 'git clone https://github.com/evanb2/Assessment7'
 
-# Copyright (c) 2015 (Name)
+2. Move into Assessment7 folder in terminal.
+
+3. Start local server: 'python -m SimpleHTTPServer'
+
+4. Open web browser and navigate to: localhost:8000
+
+5. Follow instructions on site.
+
+# Copyright (c) 2015 (Evan Butler)
 
 # The MIT License (MIT)
 
