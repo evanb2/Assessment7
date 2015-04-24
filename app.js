@@ -12,4 +12,10 @@ rollCall.config(function($stateProvider) {
     controller: "StudentsCtrl"
   });
 
+  $stateProvider.state('students.attendance', {
+    url: "/attendance",
+    templateUrl: "partials/attendance.html",
+    controller: "AttendanceCtrl"
+  });
+
 });
