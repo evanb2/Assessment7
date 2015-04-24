@@ -3,8 +3,8 @@
   <ul>
     <li ng-repeat="student in students">
       {{ student.name }}
-      <button ng-click="addSignIn(student)" class="btn btn-info btn-xs">Report</button>
-      <button ng-click="removeSignIn(student)" class="btn btn-danger btn-xs">Leave</button>
+      <button ng-click="addSignIn(student)" class="btn btn-info btn-xs" ng-hide="student.signIn">Report</button>
+      <button ng-click="removeSignIn(student)" class="btn btn-danger btn-xs" ng-hide="!student.signIn">Leave</button>
     </li>
   </ul>
 </div>

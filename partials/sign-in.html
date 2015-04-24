@@ -1,4 +1,4 @@
-<div class="row">
+<div class="row" ng-hide="state(students.attendance)">
   <div class="col-md-6">
     <h2>New Minion</h2>
     <form ng-submit="addStudent()" class="form-inline" role="form">
@@ -14,7 +14,7 @@
         {{ student.name }}
       </li>
     </ul>
-    <button type="button" ui-sref="students.attendance" ng-hide="">Show Sign-In Sheet</button>
+    <button type="button" ui-sref="students.attendance">Show Sign-In Sheet</button>
   </div>
 
 </div>
