@@ -1,5 +1,5 @@
 <div class="row" ng-hide="state(students.attendance)">
-  <div class="col-md-6">
+  <div class="col-md-4">
     <h2>New Minion</h2>
     <form ng-submit="addStudent()" class="form-inline" role="form">
       <div class="form-group">
@@ -8,15 +8,17 @@
       <button type="submit" class="btn btn-warning">Add</button>
     </form>
   </div>
-  <div ng-show="students.length">
+  <div ng-show="students.length" class="col-md-4">
+    <h4>All My Minions</h4>
     <ul>
       <li ng-repeat="student in students">
         {{ student.name }}
       </li>
     </ul>
-    <button type="button" ui-sref="students.attendance">Show Sign-In Sheet</button>
   </div>
-
+  <div class="col-md-4" ng-hide="!students.length">
+    <button id="sign-in" type="button" ui-sref="students.attendance">Show Sign-In Sheet</button>
+  </div>
 </div>
 
 
