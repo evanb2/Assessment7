@@ -1,3 +1,25 @@
-<h1>Sign-In</h1>
+<div class="row">
+  <div ng-show="students.length" class="col-md-6">
+    <h1>Report for Coding Bootcamp Here:</h1>
+    <ul>
+      <li ng-repeat="item in students">
+        <h4>{{ item.name }}</h4>
+        <!-- <button ng-click="StudentsFactory." name="button"></button> -->
+      </li>
+    </ul>
+  </div>
+  <div class="col-md-6">
+    <h2>New Minion</h2>
+    <form ng-submit="addStudent()" class="form-inline" role="form">
+      <div class="form-group">
+        <input type="text" ng-model="studentName" class="form-control" placeholder="Name" required>
+      </div>
+      <button type="submit" class="btn btn-warning">Add</button>
+    </form>
+  </div>
+
+</div>
+
+
 
 <div ui-view> </div>
